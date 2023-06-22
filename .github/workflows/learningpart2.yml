@@ -10,4 +10,4 @@ jobs:
     -uses: actions/checkout@v2
      env:
       DEFAULT_BRANCH: main
-      GITHUB_TOKEN: ${{ My Token }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
