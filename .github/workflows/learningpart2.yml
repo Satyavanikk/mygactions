@@ -9,5 +9,5 @@ jobs:
     -name: checkout
     -uses: actions/checkout@v2
      env:
-      DEFAULT_BRANCH: main
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
