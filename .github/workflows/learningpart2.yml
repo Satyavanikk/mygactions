@@ -3,11 +3,17 @@ name: Learning-part1
 on: [push]
 
 jobs:
- runs-on: [ubuntu-latest]
- steps: 
-    - name: checkout code
-      uses: actions/checkout@v2
-      
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+   
+        steps: 
+           - name: Checkout code
+             uses: actions/checkout@v2
+            env:
+                DEFAULT_BRANCH: main
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    
+   
+
+
+ 
