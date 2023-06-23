@@ -1,0 +1,13 @@
+name: specific keyword ignore
+on: [push]
+  branches:
+    - 'main/**'
+    - '!main/**-alpha'
+    steps:
+      name: checkout code
+      uses: actions/checkout@v2
+
+      env:
+        DEFAULT_BRANCH: main
+        runs-on : [ubuntu latest]
+        
