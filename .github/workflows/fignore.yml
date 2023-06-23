@@ -1,0 +1,7 @@
+name: specific keyword ignore
+
+on:
+  push:
+    branches:
+      - 'main/**'
+      - '!main/**-alpha'
